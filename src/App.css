@@ -8,6 +8,7 @@
     --font-oswald: 'Oswald', sans-serif;
     --font-urbanist: 'Urbanist', sans-serif;
     --font-abnes: 'Abnes', sans-serif;
+    --breakpoint-small: 348px;
 }
 
 @font-face {
@@ -15,5 +16,5 @@
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url("../public/abnes.otf") format("opentype");
+  src: url("/abnes.otf") format("opentype");
 }
