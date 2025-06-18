@@ -30,8 +30,8 @@ const App = () => {
             <h3 className="translate-x-[70%]">SOON</h3>
           </div>
         </div>
-        <div className="md:hidden w-60 mx-auto">
-          <img src="/logo2.png" className="scale-125" alt="" />
+        <div className="md:hidden w-[23rem] mx-auto -translate-y-5">
+          <img src="/logo-b.png" className="scale-[1.4]" alt="" />
         </div>
         <div className="hidden md:block -mt-8">
           <img
@@ -40,8 +40,8 @@ const App = () => {
             alt=""
           />
         </div>
-        <div className="mx-auto w-60 md:w-80 absolute top-1/2 left-1/2 -translate-x-1/2">
-          <img src="/sofa.png" className="scale-[1.3]" alt="" />
+        <div className="mx-auto w-60 md:w-80 absolute top-1/2 left-1/2 translate-y-12 -translate-x-1/2">
+          <img src="/sofa.png" className="scale-[1.55] md:scale-[1.2]" alt="" />
         </div>
         <div className="hidden md:block w-96 font-urbanist text-white bg-white/10 border border-white/15 rounded-[42px] p-8 tracking-wider absolute top-2/5 right-0 translate-x-3/5 scale-75">
           <h2 className="font-semibold text-xl">
