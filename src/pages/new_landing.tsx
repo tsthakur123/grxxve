@@ -71,7 +71,6 @@ const AppNew = () => {
       <div className="w-full h-screen overflow-hidden relative">
         <video
           src="video.mp4"
-          ref={videoRef}
           autoPlay
           loop
           muted
