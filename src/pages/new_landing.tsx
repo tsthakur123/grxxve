@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 
 const AppNew = () => {
@@ -6,32 +6,8 @@ const AppNew = () => {
   const [showPrompt, setShowPrompt] = useState(false);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  
 
-  useEffect(() => {
-    const enableSound = () => {
-      if (videoRef.current) {
-        videoRef.current.muted = false;
-        videoRef.current.volume = 1;
-        videoRef.current.play().catch((err) => {
-          console.warn("Playback failed:", err);
-        });
-      }
-
-      // Remove listeners after first interaction
-      window.removeEventListener("click", enableSound);
-      window.removeEventListener("touchstart", enableSound);
-    };
-
-    // Add once on load
-    window.addEventListener("click", enableSound);
-    window.addEventListener("touchstart", enableSound);
-
-    return () => {
-      window.removeEventListener("click", enableSound);
-      window.removeEventListener("touchstart", enableSound);
-    };
-  }, []);
 
   const handlePreRegister = async () => {
     setRegistered(true);
