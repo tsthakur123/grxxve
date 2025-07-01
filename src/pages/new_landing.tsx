@@ -91,7 +91,7 @@ const AppNew = () => {
           <button
             onClick={handlePreRegister}
             disabled={registered}
-            className="bg-white w-42 md:w-48 h-10 rounded-full flex items-center px-4 py-2 cursor-pointer"
+            className="bg-white w-48 h-10 rounded-full flex items-center px-4 py-2 cursor-pointer"
           >
             <div className="w-15 hidden small:block items-center translate-y-0.5">
               <img src="/arrow.svg" className="filter invert" alt="" />
