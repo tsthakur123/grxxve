@@ -83,15 +83,15 @@ const AppNew = () => {
             Coming Soon
           </p>
         </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center ">
-          <div className="font-ysabeau text-2xl md:text-4xl text-center font-bold tracking-wider mb-8">
+        <div className="w-2/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col items-center ">
+          <div className="font-ysabeau text-3xl md:text-4xl text-center font-bold tracking-wider mb-8">
             <p className="text-white">Street. Bold. Culture.</p>
           </div>
 
           <button
             onClick={handlePreRegister}
             disabled={registered}
-            className="bg-white w-42 md:w-48 h-10 rounded-full flex items-center px-2 cursor-pointer"
+            className="bg-white w-42 md:w-48 h-10 rounded-full flex items-center px-4 py-2 cursor-pointer"
           >
             <div className="w-15 hidden small:block items-center translate-y-0.5">
               <img src="/arrow.svg" className="filter invert" alt="" />
