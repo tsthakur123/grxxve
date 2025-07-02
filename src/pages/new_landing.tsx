@@ -17,18 +17,7 @@ const AppNew = () => {
   };
 
   const handleEmailSubmit = async () => {
-    // Basic email format regex
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!email) {
-    toast.error("Email is required.");
-    return;
-  }
-
-  if (!emailRegex.test(email)) {
-    toast.error("Please enter a valid email address.");
-    return;
-  }
+    // Basic email format rege
     try {
      // Save email to Appwrite DB
       await databases.createDocument(
